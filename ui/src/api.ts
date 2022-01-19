@@ -17,7 +17,7 @@ async function fetchMoreResults(query: string, page: number = 0) {
 export const resetQuery = (query: string) => async (dispatch: Dispatch, getState: typeof store.getState ) => {
     dispatch(sliceResetQuery(query));
     if (query) {
-        dispatch(setLoading);
+        dispatch(setLoading());
         const resJson = await fetchMoreResults(query);
         if (getState().searchResults.query === query) {
             dispatch(append(resJson));
@@ -29,7 +29,7 @@ export const loadNextPage = async (dispatch: Dispatch, getState: typeof store.ge
     const { searchResults: {nextPage, loading, query} } = getState();
 
     if (!loading && query) {
-        dispatch(setLoading);
+        dispatch(setLoading());
         const resJson = await fetchMoreResults(query, nextPage);
         if (getState().searchResults.query === query) {
             dispatch(append(resJson));
