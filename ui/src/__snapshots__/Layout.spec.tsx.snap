@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout has the expected structure 1`] = `
+<div
+  class="sc-bdvvtL deJxcu"
+>
+  <nav
+    class="sc-gsDKAQ eBQKJi"
+  >
+    <img
+      class="sc-dkPtRN hWfEOd"
+      src="next.png"
+    />
+    <h1
+      class="sc-hKwDye gJASDp"
+    >
+      NextTrack
+    </h1>
+  </nav>
+  <main
+    class="sc-eCImPb xTtml"
+  >
+    <div
+      class="sc-jRQBWg gslwKI"
+    >
+      Hello!
+    </div>
+  </main>
+  <footer
+    class="sc-gKclnd gEzmNI"
+  >
+    © 2022
+  </footer>
+</div>
+`;

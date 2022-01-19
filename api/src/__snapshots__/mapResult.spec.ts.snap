@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapResult maps albums correctly 1`] = `
+Object {
+  "artwork": "artworkUrl60",
+  "kind": "Album",
+  "name": "collectionName by artistName",
+  "url": "collectionViewUrl",
+}
+`;
+
+exports[`mapResult maps artists correctly 1`] = `
+Object {
+  "artwork": null,
+  "kind": "Artist",
+  "name": "artistName",
+  "url": "artistViewUrl",
+}
+`;
+
+exports[`mapResult maps tracks correctly 1`] = `
+Object {
+  "artwork": "artworkUrl60",
+  "kind": "Song",
+  "name": "trackName by artistName",
+  "url": "trackViewUrl",
+}
+`;

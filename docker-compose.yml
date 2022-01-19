@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  ui:
+    build: 
+      context: ./ui
+      args:
+        REACT_APP_API_HOST: http://localhost:3000
+    environment: 
+      PORT: 80
+    ports:
+      - 80:80
+    links:
+      - api:api
+  api:
+    build: ./api
+    environment:
+      PORT: 3000
+    ports:
+      - 3000:3000
